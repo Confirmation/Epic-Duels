@@ -1,0 +1,65 @@
+*-----------+-------------------+-----------------------------------------------------------*
+|	Fixed	|	Being worked	|	Problem													|
+|			|		on by		|															|
++-----------+-------------------+-----------------------------------------------------------+
+|	X		|					|	Skipping turns when player disconnects					|
+|	X		|					|	Successfully ending turn with 11 cards in hand			|
+|	X		|					|	Can't move zero spaces when playing a movement card		|
+|			|		X			|	Issues with networking / waiting 						|
+|   X       |					|	Own character's health can be displayed as negative		|
+|			|					|	Discarding dead character cards for health???			|
+|			|		X			|	AI - LEMONS												|
+|	X		|					|	Children (visual glitch still exist) - Lemons			|
+|	X		|					|	Children skips second action if played first - Lemons	|
+|	X		|					|	Problem with movement and actions after special played	|
+|			|					|															|
+|			|					|															|
+|			|					|															|
+|			|					|															|
+|			|					|															|
+|			|					|															|
+|			|					|															|
+*-----------+-------------------+-----------------------------------------------------------*
+|										AI		by Lemons									|
+| Done      |   Being worked on | Feature													|
+*-----------+-------------------+-----------------------------------------------------------*
+|	X		|					|	Roll													|
+|			|	X				|	Movement (defensive)									|
+|			|					|	Movement (offensive)									|
+|			|					|	Attacking												|
+|			|					|	Defending												|
+|			|					|	Specials( utility )										|
+|			|					|	Specials( movement)										|
+|			|					|	Attacking( to and from minors )							|
+|			|					|	Movement (moving minors)								|
+|			|					|															|
+|			|	X				|	AI( melee )												|
+|			|					|	AI( ranged )											|
+|			|					|	AI( utility )											|
+|			|					|	AI( hybrid: melee main, one ranged minor )				|
++-----------+-------------------+-----------------------------------------------------------+
+|										CHANGES												|
++-------------------------------------------------------------------------------------------+
+|	Implemented a better system for dealing with specials - Lemons							|
+|	Deleted AI - Lemons																		|
+|	Started work on AI - Lemons																|
+|	AI moves major defensively. Will break in certain cases. Will be fixed with next update	|
+|																							|
+|																							|
+|																							|
+*-----------+-------------------+-----------------------------------------------------------*	
+
+
+Michael here. Updated the game, client, and clientManager to possibly fix some of the bugs
+	this may have caused more bugs to appear but I did my best to test and fix them before
+	submitting. One bug I know of is when you play Luke's move both players card one the 
+	last action. It goes crazy on who is supposed to roll or not. The card plays though.
+	
+I know that may have been the main issue but I have changed the back end of the program.
+	It now does the actions one at a time. So if the card requires input, it waits until 
+	the input is received before doing the rest of the card.
+	
+If this has not changed anything, then oh well. I know this will help greatly when I start
+	reworking on the AI (which may or may not be broken at this point).
+	
+If you need to contact me, my number is (520) 236-4493 and my email is lemons.mike@gmail.com

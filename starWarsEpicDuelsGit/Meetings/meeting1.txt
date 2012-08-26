@@ -1,0 +1,109 @@
+CHARCTERS:
+	Emperor
+	Maul
+	Obi-Wan
+	Luke
+	Boba
+	Vader
+	Yoda
+
+SPECIALS COMPLETION:
+Should work  |  Does work  |  Character  |  Card  |  Command                           |  Problems
+             |     X       |  Maul       |  SS    |  Remove Action Self                | 
+             |     X       |             |  SSS   |  Remove Action Self                |  
+             |     X       |             |  AS    |  Move Major 6                      |  
+             |     X       |             |  BS    |  Damage Direct Back 3              |
+             |     X       |             |  MD    |  Draw 1                            |
+             |     X       |  Vader      |  W     |  Damage Direct Major 2             |
+             |     X       |             |        |  Damage Direct Minors 2            |
+             |     X       |             |  C     |  Damage Direct minor 6             |
+             |     X       |             |  TD    |  Damage Direct 4                   |
+             |     X       |             |  DSD   |  Damage } Heal *                   |
+             |     X       |             |  ATE   |  Damage Unblocked 17               |
+             |     X       |             |  YSANC |  Show                              |
+             |     X       |             |        |  Discard Special                   |
+             |     X       |  Emperor    |  FL    |  Damage Direct 3                   |
+             |     X       |             |        |  Discard 1                         |
+             |     X       |             |  M     |  Heal Major 4                      | 
+             |     X       |             |        |  Remove Draw                       |
+             |     X       |             |  FF    |  Foreseen                          |
+             |     X       |             |  LGOYH |  Discard Choice 2                  | 
+             |     X       |             |  YWD   |  Discard *                         |
+             |     X       |             |  RC    |  Switch                            | 
+             |     X       |  Han        |  GL    |  Damage } Discard 1                |
+             |     X       |             |  HR    |  Move 5                            |
+             |     X       |             |  BA    |  Draw 1                            |
+             |     X       |             |  NTMTO |  Damage Direct View * 2            |
+             |     X       |             |        |  Repopulate                        |
+             |     X       |             |  INW   |  Damage Direct 3                   |
+             |     X       |             |        |  Move enemy 3                      |
+             |     X       |             |  WH    |  Heal Minor 3                      |
+             |     X       |             |        |  Move Minor 5                      | 
+             |     X       |             |  WI    |  Search Deck Wookie                |
+             |     X       |  Jango      |  FUTJP |  Move *                            |  
+             |     X       |             |        |  Remove Action Self                |
+             |     X       |             |  FT    |  Damage Direct Splash 2            |
+             |     X       |             |        |  Move *                            |
+             |     X       |             |  ML    |  Draw 3                            |
+             |     X       |             |        |  Map Kamino } Draw 1               |
+             |     X       |             |  RR    |  Move *                            |
+             |     X       |             |  WC    |  Damage Direct 2                   |
+             |     X       |             |        |  Remove Action 1                   |
+             |     X       |             |  A     |  Move *                            |
+             |     X       |             |  SS    |  Damage Unblocked 3                |
+             |     X       |  Luke       |  J     |  Dead Minor } Attack 6             | 
+             |     X       |             |  IWNFY |  Show Self                         |
+             |     X       |             |        |  Show Enemy                        |
+             |     X       |             |        |  Discard Attack>1                  |
+             |     X       |             |  COTF  |  Move Major 6                      |  
+             |     X       |             |        |  Move Minor 6                      |  
+             |     X       |             |        |  Draw 2                            |
+             |     X       |             |  LFA   |  Draw 1                            |
+             |     X       |             |  LIT   |  Adjacent Major } Heal Major 3;    |
+             |     X       |             |        |      Dead Major } Heal Minor 3     |
+             |     X       |  Obiwan     |  JA    |  Move 6                            | 
+             |     X       |             |  JB    |  Draw 1                            |
+             |     X       |             |  FQ    |  Move 8                            |
+             |     X       |             |  FC    |  Move all 3                        |
+             |     X       |             |  FB    |  Discard all *                     |
+             |     X       |             |        |  Draw all 3                        |
+             |     X       |             |  JMT   |  Show graveyard 1                  |  
+             |     X       |  Yoda       |  FS    |  Draw 1                            |
+             |     X       |             |  S     |  Draw 1                            |
+             |     X       |             |  FR    |  Reflect                           |  
+             |     X       |             |  FP    |  Move enemy *                      |
+             |     X       |             |        |  Damage Direct 3                   |
+             |     X       |             |  FL    |  Immobilize                        |
+             |     X       |             |  I     |  Show                              |
+             |     X       |             |        |  Discard best 1                    |
+
+
+TASKS TO BE COMPLETED:
+Reimagined
+
+
+
+MAP: INT ARRAY
+	0 - open and moveable square
+	1 - Cannot move onto or destroy or shoot over
+	2 - Space that cannot be moved onto (pit) but can be shot over
+	3 - Destroyable obstacle (1 hit from main character/ 2 from minor) (turns to 0 once destroyed)
+	4 - Team 1 possible starting positions
+	5 - Team 2 possible strating positions
+	6 - Possible Path for a character
+	
+	10 - main character player 1
+	11 - minor character player 1
+	12 - minor character player 1 (if needed)
+	20 - main character player 2
+	21 - minor character player 2
+	22 - minor character player 2 (if needed)
+	30 - main character player 3
+	.
+	40 - main character player 4
+	50 - main character player 5
+	60 - main character player 6
+
+
+	
+	
